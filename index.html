@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacarat Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>BACARAT</h1>
+    <div id="header">
+        <p id="bet-amount"></p>
+        <p id="revenue-amount"></p>
+    </div>
+
+    <p id="message-el">Want to play a round?</p>
+
+    <div id="bet-amount-section">
+            <p id="message-bet">- Select a bet amount! -</p>
+            <button class="btn-hover" id="bet-10" onclick="bet10()">$10</button>
+            <button class="btn-hover" id="bet-50" onclick="bet50()" >$50</button>
+            <button class="btn-hover" id="bet-100" onclick="bet100()">$100</button>
+            <button class="btn-hover" id="bet-500" onclick="bet500()">$500</button>
+            <button class="btn-hover" id="bet-1000" onclick="bet1000()" >$1000</button>
+    </div>
+
+    <div id="bet-screen">
+        <div id="player">
+          <p class="player-text">PLAYER</p>
+          <p id="player-sum-screen">Sum: </p>
+          <p class="screen-style" id="player-cards">Cards: </p>
+        </div>
+        <div id="tie">
+          <p class="p-text">TIE</p>
+          <p id="player-banker">Player = <span>Banker</span> </p>
+          <p class="screen-style" id="tie-pop"></p>
+        </div>
+        <div id="bank">
+          <p class="bank-text">BANK</p>
+          <p id="bank-sum-screen">Sum: </p>
+          <p class="screen-style" id="bank-cards">Cards: </p>
+        </div>
+    </div>
+
+    <div id="bet-btns">
+          <button id="player-bet-btn" onclick="betPlayer()" >BET ON PLAYER</button>
+          <button id="tie-bet-btn" onclick="betTie()" >BET ON TIE</button>
+          <button id="bank-bet-btn" onclick="betBank()" >BET ON BANK</button>
+    </div>
+
+    
+
+    <div id="play-btns">
+           <button id="draw-cards-btn" onclick="drawACard()" >DRAW CARDS</button>
+           <button id="new-card-btn" onclick="newCard()" >NEW CARD</button>
+      
+    </div>
+    <button id="restart-btn" onclick="restartGameAll()" >RESTART GAME</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
